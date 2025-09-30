@@ -1,0 +1,33 @@
+* text=auto eol=lf
+
+# Binary assets (avoid line ending normalization)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.rar binary
+*.7z binary
+*.mp4 binary
+*.mov binary
+*.mp3 binary
+*.wav binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Lock files should not be diffed
+package-lock.json -diff
+pnpm-lock.yaml -diff
+yarn.lock -diff
+
+# Generated output: no diffs
+.next/** -diff
+out/** -diff
+build/** -diff
+coverage/** -diff
